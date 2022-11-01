@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="form-container">
+    <div class="title">Kayıt Ol</div>
+    <form [formGroup]="createUserForm">
+      <mat-form-field appearance="outline">
+        <mat-label>Emailinizi Giriniz</mat-label>
+        <input matInput formControlName="email" />
+        <mat-error>
+          <p *ngIf="f['email'].errors && f['email'].errors['required']">
+            Email zorunludur.
+          </p>
+          <p *ngIf="f['email'].errors && f['email'].errors['email']">
+            Email formatında giriniz.
+          </p>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Kullanıcı Adınız</mat-label>
+        <input matInput formControlName="userName" />
+        <mat-error>
+          <p *ngIf="f['userName'].errors && f['userName'].errors['required']">
+            Kullanıcı Adı zorunludur.
+          </p>
+          <p *ngIf="f['userName'].errors && f['userName'].errors['maxlength']">
+            En fazla 10 karakter giriniz.
+          </p>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Şifrenizi Giriniz</mat-label>
+        <input type="password" matInput formControlName="password" />
+        <mat-error>
+          <p *ngIf="f['password'].errors && f['password'].errors['required']">
+            Şifre zorunludur.
+          </p>
+          <p *ngIf="f['password'].errors && f['password'].errors['minlength']">
+            En az 8 karakter giriniz.
+          </p>
+        </mat-error>
+      </mat-form-field>
+    </form>
+    <div class="buttons-container">
+      <button
+        [disabled]="createUserForm.invalid"
+        mat-raised-button
+        class="login-button"
+        (click)="createAccount()"
+      >
+        Kayıt Ol
+      </button>
+      <p>Veya</p>
+      <button routerLink="/login" mat-button>Giriş Yap</button>
+    </div>
+  </div>
+</div>

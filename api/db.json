@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "email": "berkay2@hotmail.com",
+      "userName": "berkay2",
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "email": "berkay3@hotmail.com",
+      "userName": "berkay3",
+      "password": "12345678",
+      "id": 2
+    },
+    {
+      "email": "berkay3@hotmail.com",
+      "userName": "berkay3",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "email": "berkay4@hotmail.com",
+      "userName": "berkay4",
+      "password": "12345678",
+      "id": 4
+    },
+    {
+      "email": "berkay5@hotmail.com",
+      "userName": "berkay5",
+      "password": "12345678",
+      "id": 5
+    }
+  ],
+  "questions": [
+    {
+      "userName": "berkay2",
+      "question": "soru 2",
+      "solutions": [
+        {
+          "userName": "berkay2",
+          "solution": "asdasfd",
+          "plus": [],
+          "minus": []
+        },
+        {
+          "userName": "berkay2",
+          "solution": "vssdaasvdc",
+          "plus": [],
+          "minus": []
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userName": "berkay2",
+      "question": "xxx",
+      "solutions": [
+        {
+          "userName": "berkay3",
+          "solution": "asdafsd",
+          "plus": [
+            2
+          ],
+          "minus": []
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userName": "berkay2",
+      "question": "soru 3",
+      "solutions": [
+        {
+          "userName": "berkay2",
+          "solution": "sadasd",
+          "plus": [
+            1
+          ],
+          "minus": []
+        },
+        {
+          "userName": "berkay2",
+          "solution": "zxczxc",
+          "plus": [
+            1
+          ],
+          "minus": []
+        },
+        {
+          "userName": "berkay2",
+          "solution": "cevap 3",
+          "plus": [
+            1,
+            2
+          ],
+          "minus": []
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

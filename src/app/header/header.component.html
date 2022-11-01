@@ -1,0 +1,15 @@
+<mat-toolbar class="header-container" color="primary">
+  <div>Question & Answer</div>
+  <div>
+    <button *ngIf="userService.user != undefined" mat-button (click)="logOut()">
+      Çıkış Yap
+    </button>
+    <button
+      *ngIf="userService.user == undefined"
+      mat-button
+      routerLink="/login"
+    >
+      Giriş Yap
+    </button>
+  </div>
+</mat-toolbar>
